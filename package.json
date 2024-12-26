@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@internwave/scrapers-api": "^1.0.0",
+    "puppeteer-core": "^23.11.1",
     "tsup": "^8.2.4"
   },
   "engines": {
