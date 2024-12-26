@@ -1,7 +1,6 @@
 import {
     getRandomJob, 
     IScrapedJob, 
-    ScraperInputType,
     API
 } from '@internwave/scrapers-api';
 
