@@ -4,7 +4,8 @@
   "description": "Dummy web scraper that generates random jobs for InternWave's desktop application",
   "main": "./build/index.js",
   "scripts": {
-    "build": "yarn copyREADME && yarn copyCHANGELOG && tsup --publicDir --watch",
+    "build": "yarn copyREADME && yarn copyCHANGELOG && tsup --publicDir --watch --dts",
+    "build-test": "npx tsc --noEmit",
     "copyREADME": "copyfiles README.md public",
     "copyCHANGELOG": "copyfiles CHANGELOG.md public"
   },
@@ -15,7 +16,7 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@internwave/scrapers-api": "^1.0.0",
+    "@internwave/scrapers-api": "^1.0.1",
     "puppeteer-core": "^23.11.1",
     "tsup": "^8.2.4"
   },
